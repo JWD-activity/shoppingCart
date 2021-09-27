@@ -6,12 +6,18 @@ import Navbar from 'react-bootstrap/Navbar';
 function Header() {
   return (
     <header>
-      <Navbar bg='light'>
+      <Navbar bg='primary' className='p-4'>
         <Container>
-          <Navbar.Brand href='#'>Small Shopping Cart</Navbar.Brand>
+          <Navbar.Brand href='#' className='text-light'>
+            Small Shopping Cart
+          </Navbar.Brand>
           <Nav>
-            <Nav.Link href='#'>Cart</Nav.Link>
-            <Nav.Link href='#'>SignIn</Nav.Link>
+            <Nav.Link href='#' className='text-light pe-4'>
+              Cart
+            </Nav.Link>
+            <Nav.Link href='#' className='text-light'>
+              SignIn
+            </Nav.Link>
           </Nav>
         </Container>
       </Navbar>
