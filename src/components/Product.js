@@ -2,14 +2,19 @@ import React from 'react';
 import Image from 'react-bootstrap/Image';
 import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
+import Card from 'react-bootstrap/Card';
 
 function Product({ product }) {
   return (
     <Col>
-      <Image src={product.image} alt={product.name} />
-      <h3>{product.name}</h3>
-      <div>${product.price}</div>
-      <Button variant='primary'>Add To Cart</Button>
+      <Card className='border-0 shadow'>
+        <Card.Img variant='top' src={product.image} alt={product.name} />
+        <Card.Body>
+          <Card.Title>{product.name}</Card.Title>
+          <Card.Text>${product.price}</Card.Text>
+          <Button variant='danger'>Add To Cart</Button>
+        </Card.Body>
+      </Card>
     </Col>
   );
 }

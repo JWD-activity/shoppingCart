@@ -12,9 +12,9 @@ function Main({ products, children }) {
   return (
     <main>
       <Container>
-        <Row>
-          <Col lg={9}>
-            <h2>Products</h2>
+        <Row className='my-5'>
+          <Col lg={8}>
+            <h2 className='h4 text-primary'>Products</h2>
             <Row>{productList}</Row>
           </Col>
           <Col lg={3}>{children}</Col>

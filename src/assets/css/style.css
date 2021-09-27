@@ -47,7 +47,7 @@
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
   --bs-body-bg-rgb: 255, 255, 255;
-  --bs-font-sans-serif: "Be Vietnam", sans-serif;
+  --bs-font-sans-serif: "Inter", sans-serif;
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
@@ -4192,7 +4192,7 @@ textarea.form-control-lg {
   background-color: rgba(255, 255, 255, 0.85);
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0.5rem 1rem rgba(36, 45, 82, 0.089);
   border-radius: 0.25rem; }
   .toast.showing {
     opacity: 0; }
@@ -5242,7 +5242,7 @@ textarea.form-control-lg {
   display: none !important; }
 
 .shadow {
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important; }
+  box-shadow: 0 0.5rem 1rem rgba(36, 45, 82, 0.089) !important; }
 
 .shadow-sm {
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important; }
@@ -7912,4 +7912,4 @@ body {
   -moz-osx-font-smoothing: grayscale; }
 
 img {
-  max-height: 8rem; }
+  height: 15rem; }
