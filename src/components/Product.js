@@ -1,10 +1,9 @@
 import React from 'react';
-import Image from 'react-bootstrap/Image';
 import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 
-function Product({ product }) {
+function Product({ product, onAdd }) {
   return (
     <Col>
       <Card className='border-0 shadow'>
@@ -12,7 +11,9 @@ function Product({ product }) {
         <Card.Body>
           <Card.Title>{product.name}</Card.Title>
           <Card.Text>${product.price}</Card.Text>
-          <Button variant='danger'>Add To Cart</Button>
+          <Button type='button' variant='danger' onClick={() => onAdd(product)}>
+            Add To Cart
+          </Button>
         </Card.Body>
       </Card>
     </Col>
