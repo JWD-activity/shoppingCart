@@ -26,12 +26,32 @@ function App() {
     }
   };
 
+  const onRemove = (product) => {
+    const foundProduct = cartItems.find((item) => item.id === product.id);
+
+    if (foundProduct.qty === 1) {
+      setCartItems(cartItems.filter((item) => item.id !== product.id));
+    } else {
+      setCartItems(
+        cartItems.map((item) =>
+          item.id === product.id
+            ? { ...foundProduct, qty: foundProduct.qty - 1 }
+            : item
+        )
+      );
+    }
+  };
+
   const { products } = data;
   return (
     <div className='App'>
       <Header />
       <Main onAdd={onAdd} products={products}>
-        <Basket onAdd={onAdd} cartItems={cartItems}></Basket>
+        <Basket
+          onAdd={onAdd}
+          onRemove={onRemove}
+          cartItems={cartItems}
+        ></Basket>
       </Main>
     </div>
   );

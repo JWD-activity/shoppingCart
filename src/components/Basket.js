@@ -4,25 +4,14 @@ import Row from 'react-bootstrap/Row';
 import Button from 'react-bootstrap/Button';
 
 function Basket({ cartItems, onAdd, onRemove }) {
-  console.log('cartItems:', cartItems);
-  // const ItemList =
-  //   cartItems.length !== 0 &&
-  //   cartItems.map((item) => {
-  //     <Row key={item.id}>
-  //       <Col>{item.name}</Col>
-  //       <Col>
-  //         <Button variant='danger' onClick={() => onAdd(item)}>
-  //           +
-  //         </Button>
-  //         <Button variant='danger' onClick={() => onRemove(item)}>
-  //           -
-  //         </Button>
-  //       </Col>
-  //       <Col>
-  //         {item.qty} x ${item.price.toFixed(2)}
-  //       </Col>
-  //     </Row>;
-  //   });
+  const itemsPrice = cartItems.reduce(
+    (total, currentItem) => total + currentItem.price * currentItem.qty,
+    0
+  );
+
+  const taxPrice = itemsPrice * 0.1;
+  const shippingPrice = itemsPrice > 2000 ? 0 : 50;
+  const totalPrice = itemsPrice + taxPrice + shippingPrice;
 
   return (
     <aside>
@@ -31,24 +20,44 @@ function Basket({ cartItems, onAdd, onRemove }) {
         {cartItems.length === 0 ? (
           <p>Cart is empty!</p>
         ) : (
-          <>
+          <div className='bg-light p-3'>
             {cartItems.map((item) => (
-              <Row key={item.id} className='align-items-center'>
+              <Row key={item.id} className='align-items-center my-3'>
                 <Col>{item.name}</Col>
                 <Col>
-                  <Button variant='warning' onClick={() => onAdd(item)}>
+                  <Button
+                    variant='warning'
+                    className='me-2'
+                    onClick={() => onAdd(item)}
+                  >
                     +
                   </Button>
                   <Button variant='primary' onClick={() => onRemove(item)}>
                     -
                   </Button>
                 </Col>
-                <Col>
+                <Col className='text-end'>
                   {item.qty} x ${item.price.toFixed(2)}
                 </Col>
               </Row>
             ))}
-          </>
+            <Row className='border-top py-3'>
+              <Col>Item Price</Col>
+              <Col className='text-end'>${itemsPrice.toFixed(2)}</Col>
+            </Row>
+            <Row className='py-3'>
+              <Col>Tax Price</Col>
+              <Col className='text-end'>${taxPrice.toFixed(2)}</Col>
+            </Row>
+            <Row className='py-3'>
+              <Col>Shipping Price</Col>
+              <Col className='text-end'>${shippingPrice.toFixed(2)}</Col>
+            </Row>
+            <Row className='py-3'>
+              <Col>Total Price</Col>
+              <Col className='text-end'>${totalPrice.toFixed(2)}</Col>
+            </Row>
+          </div>
         )}
       </Col>
     </aside>
