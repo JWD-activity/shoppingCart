@@ -10,10 +10,10 @@ function App() {
   return (
     <div className='App'>
       <Header></Header>
-      <Row>
-        <Main products={products}></Main>
+
+      <Main products={products}>
         <Basket></Basket>
-      </Row>
+      </Main>
     </div>
   );
 }
