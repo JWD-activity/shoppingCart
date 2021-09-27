@@ -10,7 +10,7 @@
 ### Links
 
 - Solution URL: [Github repo](https://github.com/JWD-activity/shoppingCart)
-- Live Site URL: [https://frontendchallenges.github.io/Order_summary/](https://frontendchallenges.github.io/Order_summary/)
+- Live Site URL: [https://jwd-activity.github.io/shoppingCart/](https://jwd-activity.github.io/shoppingCart/)
 
 ## My process
 
