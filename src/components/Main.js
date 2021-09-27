@@ -13,10 +13,8 @@ function Main({ products, children }) {
     <main>
       <Container>
         <Row>
-          <h2>Products</h2>
-        </Row>
-        <Row>
           <Col lg={9}>
+            <h2>Products</h2>
             <Row>{productList}</Row>
           </Col>
           <Col lg={3}>{children}</Col>

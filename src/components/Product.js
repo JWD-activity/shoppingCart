@@ -16,9 +16,8 @@ function Product({ product }) {
       />
       <h3>{product.name}</h3>
       <div>${product.price}</div>
-      <div>
-        <Button variant='primary'>Add To Cart</Button>
-      </div>
+
+      <Button variant='primary'>Add To Cart</Button>
     </Col>
   );
 }
