@@ -1,5 +1,6 @@
 import React from 'react';
 import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
 import Product from './Product';
 
 function Main({ products }) {
@@ -9,10 +10,8 @@ function Main({ products }) {
 
   return (
     <main>
-      <Col>
-        <h2>Products</h2>
-        {productList}
-      </Col>
+      <h2>Products</h2>
+      {productList}
     </main>
   );
 }
