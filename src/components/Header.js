@@ -2,8 +2,9 @@ import React from 'react';
 import { Nav } from 'react-bootstrap';
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
+import Badge from 'react-bootstrap/Badge';
 
-function Header() {
+function Header({ countCartItems }) {
   return (
     <header>
       <Navbar bg='primary' className='p-4'>
@@ -13,7 +14,10 @@ function Header() {
           </Navbar.Brand>
           <Nav>
             <Nav.Link href='#' className='text-light pe-4'>
-              Cart
+              Cart{' '}
+              <Badge bg='warning' className='text-primary'>
+                {countCartItems}
+              </Badge>
             </Nav.Link>
             <Nav.Link href='#' className='text-light'>
               SignIn

@@ -53,7 +53,7 @@ function Basket({ cartItems, onAdd, onRemove }) {
               <Col>Shipping Price</Col>
               <Col className='text-end'>${shippingPrice.toFixed(2)}</Col>
             </Row>
-            <Row className='py-3'>
+            <Row className='py-3 fw-bold'>
               <Col>Total Price</Col>
               <Col className='text-end'>${totalPrice.toFixed(2)}</Col>
             </Row>

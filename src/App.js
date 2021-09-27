@@ -45,7 +45,7 @@ function App() {
   const { products } = data;
   return (
     <div className='App'>
-      <Header />
+      <Header countCartItems={cartItems.length} />
       <Main onAdd={onAdd} products={products}>
         <Basket
           onAdd={onAdd}
