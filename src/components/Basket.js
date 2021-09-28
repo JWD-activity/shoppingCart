@@ -15,7 +15,7 @@ function Basket({ cartItems, onAdd, onRemove }) {
   return (
     <aside>
       <Col className='px-3'>
-        <h2 className='h4 text-primary'>Cart Items</h2>
+        <h1 className='h4 text-primary'>Cart Items</h1>
         {cartItems.length === 0 ? (
           <p>Cart is empty!</p>
         ) : (
