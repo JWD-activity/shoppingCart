@@ -1,7 +1,32 @@
-# Shopping Cart
+# Shopping Cart (ShoppingCart_ver01)
+[Click here to view the website](https://jwd-activity.github.io/shoppingCart/)
 
+## Description
 ### The challenge
+- 
+## My process
+### Built with
+- HTML
+- CSS
+- React-Bootstrap
+- Sass
+- JavaScript
+- React
+- NPM
+  - **node-sass** https://www.npmjs.com/package/node-sass 
+  - **gh-pages**  https://www.npmjs.com/package/gh-pages
 
+### Useful resources
+- **React Shopping Cart For Absolute Beginners [2021]** https://www.youtube.com/watch?v=AmIdY1Eb8tY
+
+### Things I applied
+- JavaScript Array Methods: filter, find, map, reduce
+- React  
+  - Props and Events: Passing data and functions between components
+  - Conditional Rendering of Components
+  - Hooks: useState
+
+### What I learned
 
 ### Screenshot
 - Desktop: 1440px
@@ -12,17 +37,3 @@
 - Mobile: 375px
 
 ![mobile-shopping-cart-sm](https://user-images.githubusercontent.com/83196262/135011807-b04ba0e5-eae2-4395-92e4-973816322162.png)
-
-### Links
-
-- Solution URL: [Github repo](https://github.com/JWD-activity/shoppingCart)
-- Live Site URL: [https://jwd-activity.github.io/shoppingCart/](https://jwd-activity.github.io/shoppingCart/)
-
-## My process
-
-### Built with
-
-### Useful resources
-
-### What I learned
-
