@@ -1,3 +1,10 @@
 img {
   height: 15rem;
 }
+
+@media screen and (max-width: 992px) {
+  img {
+    width: 100%;
+    height: auto;
+  }
+}

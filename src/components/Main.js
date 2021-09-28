@@ -15,7 +15,7 @@ function Main({ products, onAdd, children }) {
         <Row className='my-5'>
           <Col lg={8}>
             <h2 className='h4 text-primary'>Products</h2>
-            <Row>{productList}</Row>
+            <Row className='justify-content-center'>{productList}</Row>
           </Col>
           <Col lg={4}>{children}</Col>
         </Row>

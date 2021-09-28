@@ -5,8 +5,8 @@ import Card from 'react-bootstrap/Card';
 
 function Product({ product, onAdd }) {
   return (
-    <Col>
-      <Card className='border-0 shadow'>
+    <Col lg={4} md={10}>
+      <Card className='border-0 shadow my-3'>
         <Card.Img variant='top' src={product.image} alt={product.name} />
         <Card.Body>
           <Card.Title>{product.name}</Card.Title>

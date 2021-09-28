@@ -20,9 +20,9 @@ function Basket({ cartItems, onAdd, onRemove }) {
         {cartItems.length === 0 ? (
           <p>Cart is empty!</p>
         ) : (
-          <div className='bg-light p-3'>
+          <div className='bg-light p-3 my-4'>
             {cartItems.map((item) => (
-              <Row key={item.id} className='align-items-center my-3'>
+              <Row key={item.id} className='align-items-center my-3 '>
                 <Col>{item.name}</Col>
                 <Col>
                   <Button
@@ -56,6 +56,11 @@ function Basket({ cartItems, onAdd, onRemove }) {
             <Row className='py-3 fw-bold'>
               <Col>Total Price</Col>
               <Col className='text-end'>${totalPrice.toFixed(2)}</Col>
+            </Row>
+            <Row className='py-3'>
+              <Button type='button' variant='warning'>
+                Checkout
+              </Button>
             </Row>
           </div>
         )}
