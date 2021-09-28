@@ -22,7 +22,8 @@
 ### Things I applied
 - JavaScript Array Methods: filter, find, map, reduce
 - React  
-  - Props and Events: Passing data and functions between components
+  - Function components
+  - Props and Events: Passing data between components
   - Conditional Rendering of Components
   - Hooks: useState
 
