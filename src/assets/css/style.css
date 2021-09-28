@@ -7911,6 +7911,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+main {
+  min-height: 80vh; }
+
 img {
   height: 15rem; }
 

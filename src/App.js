@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Header from './components/Header';
 import Basket from './components/Basket';
 import Main from './components/Main';
+import Footer from './components/Footer';
 import data from './data';
 import './assets/scss/custom.scss';
 
@@ -53,6 +54,7 @@ function App() {
           cartItems={cartItems}
         ></Basket>
       </Main>
+      <Footer author='JINOK' />
     </div>
   );
 }

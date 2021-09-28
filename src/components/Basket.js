@@ -8,7 +8,6 @@ function Basket({ cartItems, onAdd, onRemove }) {
     (total, currentItem) => total + currentItem.price * currentItem.qty,
     0
   );
-
   const taxPrice = itemsPrice * 0.1;
   const shippingPrice = itemsPrice > 2000 ? 0 : 50;
   const totalPrice = itemsPrice + taxPrice + shippingPrice;
