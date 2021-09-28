@@ -27,6 +27,7 @@
   - Hooks: useState
 
 ### What I learned
+- I learned the difference between props and state. Props are read-only, cannot be modified and are delivered from parents. Whereas state can be modified using setState. State change can be asynchronous and created within a component.
 
 ### Screenshot
 - Desktop: 1440px
