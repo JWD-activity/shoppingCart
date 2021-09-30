@@ -22,7 +22,7 @@
 ### Things I applied
 - JavaScript Array Methods: filter, find, map, reduce
 - React  
-  - Function components
+  - **Function components**
   - Props and Events: Passing data between components
   - Conditional Rendering of Components
   - Hooks: useState
